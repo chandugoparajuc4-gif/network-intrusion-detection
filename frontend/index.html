@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Network Intrusion Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AI Network Intrusion Detection System</h1>
+        <p>Machine learning based network traffic classification</p>
+    </header>
+
+    <main>
+        <section class="card">
+            
+            <section class="stats-section">
+                <h2>Dashboard Overview</h2>
+
+                <div class="stats-container">
+                <div class="stat-card total">
+                    <h3>Total Predictions</h3>
+                    <p id="totalPredictions">0</p>
+                </div>
+
+                <div class="stat-card normal">
+                    <h3>Normal Traffic</h3>
+                    <p id="normalTraffic">0</p>
+                </div>
+
+                <div class="stat-card attacks">
+                    <h3>Attacks Detected</h3>
+                    <p id="attacksDetected">0</p>
+                </div>
+                </div>
+            </section>
+                <h2>Traffic Analysis</h2>
+                <p>Enter the 78 network traffic features to predict the traffic category.</p>
+
+            <form id="predictionForm">
+                <button type="button" id="loadSample">
+                Load Sample Data
+                </button>
+                <div id="features"></div>
+                <button type="submit">Analyze Traffic</button>
+            </form>
+
+            <div id="result" class="result hidden"></div>
+            <section class="history">
+                <h2>Prediction History</h2>
+                <p>Recent traffic analysis results</p>
+                <div id="historyList">
+                <p>No predictions yet.</p>
+                </div>
+                </section>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

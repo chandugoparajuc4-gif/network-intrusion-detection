@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.venv/
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Local database
+backend/predictions.db
+*.sqlite
+*.sqlite3
+
+# Generated datasets
+dataset/MachineLearningCVE/
+dataset/processed/
+
+# Generated model
+models/*.pkl
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Operating system
+.DS_Store
+Thumbs.db
